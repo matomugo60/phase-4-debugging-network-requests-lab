@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  I handled the 500 error when I added a new toy by confirming that there was a definded route for it in the routes.rb. I checked the toyscontroller file and discovered that is was stated as Toys and changed it to Toy.
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  json was not being returned so I updated the code and it worked.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  There was no route for destroy and I updated it for it to work and not bring the 404 error.
